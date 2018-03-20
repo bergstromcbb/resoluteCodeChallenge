@@ -1,0 +1,19 @@
+extends layout
+
+include mixins/_storeCard
+
+block content
+    .inner
+        h2 #{tag  || 'Ranking of players'}
+        //- pre= h.dump(tags)
+
+        ul.tags
+            each t in tags
+                li.tag
+                    a.newtag__link.newtag__text(href=`/tags/${t._id}` class=(t._id === tag ? 'tag__link--active': ''))
+                        span.tag__text.newtag__text= t._id
+                        .tag__text.newtag__text has won
+                        span.tag__count= t.count
+        .stores
+            each store in stores
+                +storeCard(store)

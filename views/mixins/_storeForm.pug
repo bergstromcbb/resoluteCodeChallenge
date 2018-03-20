@@ -1,0 +1,18 @@
+mixin storeForm(store = {})
+  form(action="/add" method="POST" class="card")
+    label(for="name") Game Date
+    input(type="text" name="name")
+    label(for="description") Score 1
+    input(type="text" name="description")
+    label(for="description2") Score 2
+    input(type="text" name="description2")
+    label(for="who_won") Who won the Game
+    - const choices = ['James', 'Josh', 'John', 'Jackson', 'Jacob', 'JJ']
+    ul.tags
+      each choice in choices  
+        .tag.tag__choice 
+          input(type="checkbox" id=choice value=choice name="tags")
+          label(for="choice" class='xsmall')= choice
+
+    input(type="submit" value="Save" class="button")
+  
