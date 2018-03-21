@@ -17,12 +17,12 @@ Within the app, there is a MongoDB database which contains all the games entered
 
 The database contains a json object that contains all the items used in the form.  Once entered, the information is then queried to get the counts for the ranking page.  
 
-An axios ajax component powers the search field and once you have entered a month with an entry the drop down shows you the dates in that month or tell you that there aren’t any available.  
+An axios ajax component powers the search field and once you have entered a month containing 
+an entry the drop down shows you the dates in that month or tells you that there aren’t any available.  
 
-The app has been deployed to heroku so that the server can run and app be viewed and used
+The app has been deployed to heroku so that the server can run and app be viewed and used.
 
-
-there is also a mocha test that can be run if you down load the app and run it locally.  
+There is also a mocha test that can be run if you download the app and run it locally.  
 
 In response to code challenge:
 
@@ -35,13 +35,13 @@ https://github.com/bergstromcbb/resoluteCodeChallenge
 The added bonuses met are:
 
 The app has been deployed to heroku
-The app was created using templating language pug.
+The app was created using templating language Pug.
 
 
 If you want to run the app locally you can clone the project.
 
 Navigate to project.  
-Navigate to directory with the pkg.json
+Navigate to directory with the package.json
 Run npm install
 Run npm start
 navigate to localhost:7777
